@@ -2,9 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 import PyPDF2
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
 
 genai.configure(api_key=api_key)
