@@ -3,10 +3,8 @@ import google.generativeai as genai
 import PyPDF2
 from docx import Document
 import os
-from dotenv import load_dotenv
 from io import BytesIO
 
-load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
 
 genai.configure(api_key=api_key)
